@@ -1,0 +1,101 @@
+rank;lastname;firstname;yearofbirth;residence;club;time_s;s_per_k
+1;Irarragorri;Camilo;2003;Herrliberg;;1755;176
+2;Freitag;Nino;2004;8408;;1756;176
+3;Bussy;Wondimu;1995;Genève;;1795;180
+4;McIntyre;Paul;2000;Rolle;;1812;181
+5;Kaufmann;Loris;2003;Dürnten;;1818;182
+6;Monnerat;Léandre;2002;Haute-Sorne;;1818;182
+7;Hofer-Girsberger ;Jonathan;2003;Zürich ;;1821;182
+8;Hübscher;Tim;2000;Schaffhausen;;1827;183
+9;Ammann;Simon;1998;Oberrieden;;1828;183
+10;Sintes;Gabriel;1994;Les-Geneveys-sur-Coffrane;;1828;183
+11;Rüttimann;Jan;1995;9033;;1832;183
+12;Engelhardt;Adriano;1992;GLAND;;1832;183
+13;FORT;Adrien;1995;Vétraz-Monthoux;;1840;184
+14;Monney;Sylvain;1999;Corpataux;;1857;186
+15;Coendet;Andy;1994;Froideville;;1861;186
+16;Pünter;Rico;2004;Hombrechtikon;;1877;188
+17;Hunt;Jérémy;1992;Cornol;;1883;188
+18;Benninghoff;Mathieu;1999;Thônex;;1885;189
+19;Lanzi;Valérian ;2005;Reinach;;1885;189
+20;Renner;Roman;1999;Luzern;;1887;189
+21;Gigon;Nathan;2001;Fontenais;;1892;189
+22;Dolce;Louis;1999;Vicques;;1894;189
+23;Caloz;Joel;1999;Miège;;1896;190
+24;Monney;Arnaud;2002;Corpataux;;1900;190
+25;Fantoli;Quentin;1999;Bonvillars;;1904;190
+26;Decurnex;Thibaud;1998;Commugny;;1908;191
+27;Trummer;Stefan;1986;Spiez;;1908;191
+28;Witteveen;Hugo;2008;Vessy;;1909;191
+29;Zürcher;Martin;1982;Weier;;1917;192
+30;Stricker;Alex;2008;Riehen;;1920;192
+31;Marani;Tommaso;1999;Viganello;;1920;192
+32;Jakober;Eric;2003;1;;1929;193
+33;Halter;Fabio;2004;Mörschwil;;1929;193
+34;Jauch;Manfred;1975;Altdorf;;1931;193
+35;Ulrich;Stefan;1996;Regensdorf;;1932;193
+36;Senn;David;1975;Bolligen;;1933;193
+37;Lehmann;Cédric;1995;Liebefeld;;1934;193
+38;Vallat;Colin;2005;Villars-sur-Fontenais;;1936;194
+39;Mülli;Miro;2002;Egg;;1938;194
+40;Ren;Elia;2004;Ponte Capriasca;;1940;194
+41;Rotzetter;Marc;2000;Rechthalten;;1941;194
+42;baudouin;Alexis;2000;Genève;;1942;194
+43;Boulot;Arthur;2007;Genève;;1942;194
+44;Vuichard;Jérôme;1996;Bernex;;1944;194
+45;Böhi;Gratian;2006;Horgen;;1945;195
+46;Morand;Michael;1983;Court;;1945;195
+47;Hagger;Nicola;1999;Boppelsen;;1945;195
+48;Pinto ;Ricardo ;1987;Veyrier ;;1946;195
+49;Henrotin;Max;2002;Sciernes-d'Albeuve;;1948;195
+50;Marti;Sven;1984;Buochs;;1954;195
+51;WIDMER BASTIAN;;2006;OFTRINGEN;;1955;196
+52;Witschi;Sébastien;1995;Alle;;1957;196
+53;Maggetti;Elia;2006;Verscio;;1961;196
+54;Knaus;David;2004;Winterthur;;1966;197
+55;Maccagnan;Pierre;2006;Bex;;1966;197
+56;Leneuf;Louis;1999;Corseaux;;1967;197
+57;Vetterli;Samir;1991;Wilen;;1968;197
+58;Crettenand;Eliot;2002;Gumefens;;1968;197
+59;Schneeberger;Manuel;2006;Langenthal;;1974;197
+60;Aebi;Daniel;1982;Ortschwaben;;1974;197
+61;von Wartburg;Geronimo;1988;Göttingen;;1974;197
+62;Chenal;Bastien;2005;Montfaucon;;1977;198
+63;Bircher;Gian;2005;Ennetbaden;;1983;198
+64;Chételat;Colin;2001;Delémont ;;1983;198
+65;Queloz;Antonin;2002;Le Noirmont;;1983;198
+66;Heiniger;Stéphane;1979;Cuarny;;1986;199
+67;Eisen;Laurent;1992;Delémont;;1986;199
+68;Stotzer;Raphaël;2002;Morges;;1986;199
+69;Mettraux;Julien;1992;Bern;;1987;199
+70;Vögeli;Roman;1995;Kleindöttingen;;1987;199
+71;Silva;Miguel;1978;Thônex;;1988;199
+72;Buonocore;Ivan;1998;Neuchâtel;;1989;199
+73;Stadler;Andrin ;1999;Neerach;;1993;199
+74;Schönenberger;Simon;1987;Busssnang;;2002;200
+75;Ferretti;Rocco;1996;Muzzano;;2003;200
+76;Castiglioni;Luca;1979;Thalwil;;2005;201
+77;Girardet;david;1979;Belfaux;;2006;201
+78;Marchon;Thierry;1993;Riaz;;2009;201
+79;Ott;Marcel;1995;Tagelswangen;;2013;201
+80;Poletti;Dylan;2008;Vernier;;2026;203
+81;De Pizzol;Stefan;1992;St. Gallenkappel;;2028;203
+82;Wolfensberger;Simon;2004;Winterthur;;2032;203
+83;Monti;Livien;1991;Porrentruy;;2033;203
+84;Wyss;Stephan;2005;Langenthal;;2037;204
+85;Lang;Sven;2000;Muri AG;;2037;204
+86;Clijsen;Till;2003;Malans;;2040;204
+87;Wüst;Finn;2008;Root;;2040;204
+88;Ryffel;Lars;2001;Bäretswil;;2042;204
+89;Kolb;Lars;1991;Kehrsatz;;2043;204
+90;Bohren;Yves;1975;Kleinandelfingen;;2046;205
+91;Noack;Noé;2009;Tübach;;2046;205
+92;wheeler;cecil;1968;cham;;2049;205
+93;Oberholzer;Robin;2000;Zürich;;2049;205
+94;Burkhard;Beat;1975;Illnau-Effretikon;;2050;205
+95;Donzé;Mattéo;2007;La Neuveville;;2051;205
+96;Fleury;Théo;1999;Delémont;;2055;206
+97;Müller;Daniel;1973;Küssnacht;;2066;207
+98;BRODARD;Maxime;1995;Val-de-Charmey;;2069;207
+99;Marty;Stefan;1979;Steinen;;2070;207
+100;Coletti;Luigi;1972;Tecknau;;2073;207

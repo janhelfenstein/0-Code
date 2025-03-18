@@ -1,4 +1,4 @@
-ï»¿rank-sm;lastname;firstname;yearofbirth;residence;club;time_s;s_per_km
+rank;lastname;firstname;yearofbirth;residence;club;time_s;s_per_k
 1;Morgan;Le-Guen;1993;Annemasse;Stade-Geneve;1755;175
 2;Ruettimann;Eric;1992;Untereggen;LC-Uster;1762;176
 3;Lehmann;Adrian;1989;Langenthal;LV-Langenthal;1767;176
@@ -17,7 +17,7 @@
 16;Herren;Dominik;1996;Liebefeld;STB-Leichtathletik;1874;187
 17;Coendet;Andy;1994;Bernex;Stade-Geneve;1881;188
 18;Renner;Roman;1999;Meierskappel;TSV-2001-Rotkreuz;1895;189
-19;Leboeuf;FranÃ§ois;1985;Aigle;CABV-Martigny;1898;189
+19;Leboeuf;François;1985;Aigle;CABV-Martigny;1898;189
 20;Schaub;Jonas;2003;Benglen;TV-Maur;1900;189
 21;Wenk;Stephan;1982;Bertschikon-Gossau;TV-Oerlikon;1903;190
 22;Christen;Julien;1998;Kirchlindach;STB-Leichtathletik;1905;190
@@ -36,7 +36,7 @@
 35;Amstutz;Timon;1987;Hindelbank;TV-Laenggasse;1919;191
 36;Marti;Mickael;2004;Sonceboz-Sombeval;TIP-TOP-Swiss-Polysport-Macolin;1926;192
 37;Niederhauser;Thibault;1998;Chateau-d'Oex;;1931;192
-38;Chalus;FranÃ§ois;1995;Zuerich;TV-Oerlikon;1936;193
+38;Chalus;François;1995;Zuerich;TV-Oerlikon;1936;193
 39;Hutterli;Loris;1986;Zuerich;UNISPORTS-recruiting;1938;193
 40;Benz;Fabian;2000;Berneck;MILA-Rheintal;1939;193
 41;Rotzetter;Marc;2000;Rechthalten;Athletic-Team-Rechthalten;1943;193
