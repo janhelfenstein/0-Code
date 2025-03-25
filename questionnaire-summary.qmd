@@ -85,6 +85,8 @@ pie(survey_vis$fraction, labels = survey_vis$run_freq, main = "How often do you 
 
 dev.off() # close the device
 
+# recreate pie chart for the report
+pie(survey_vis$fraction, labels = survey_vis$run_freq, main = "How often do you run per week?")
 ```
 
 create barplot with ggplot
