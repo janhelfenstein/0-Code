@@ -1,0 +1,30 @@
+---
+title: "First quarto document in vscode"
+format: html
+author: "Jan Helfenstein"
+date: 2025-03-25
+---
+
+Re-do the tasks you did in RBTL course
+
+```{r}
+library(gapminder)
+
+gapminder_2007 <- gapminder |>
+    filter(year == 2007)
+
+plot1 <- ggplot(data = gapminder_2007,
+      mapping = aes(x = continent,
+                   y = lifeExp,
+                   fill = continent
+                   )
+      ) +
+    geom_boxplot() +
+    labs(title = "Life expectancy in 2007 by continent")
+
+ggsave("life-exp-2007.png", plot = plot1, width = 8, height = 6, dpi = 300)
+```
+
+I also used chatgpt for help, here are the prompts:
+
+<https://chatgpt.com/share/67e3198e-3e88-8011-9149-55e7b3ed69f9>

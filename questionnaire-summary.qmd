@@ -49,26 +49,28 @@ survey_date <- survey |>
     select(!time_num)
 ```
 
-TODO change value "no" in variable "tracking" to "no tracking"
-
-```{r}
-
-```
-
-create factor variables
+create factor variables, and change value "no" in variable "tracking" to "no tracking"
 
 ```{r}
 levels_loc = c("nature", "city", "indoors", "other") # I want the levels in this order
-levels_tracking = c("no t racking", "free", "paid")
+levels_tracking = c("no tracking", "free", "paid")
 
 #?as.factor
 
 survey_factor <- survey_date |>
     mutate(run_loc = factor(run_loc, levels = levels_loc)) |>
-    mutate(tracking = as.factor(tracking))
+    mutate(tracking = case_when(tracking == "no" ~ "no tracking",
+                                .default = tracking
+                                )
+          ) |>
+    mutate(tracking = factor(tracking, levels = levels_tracking))
 ```
 
 ## Create plots
+
+create a pie chart to visualize how often people run
+
+used chatgpt: <https://chatgpt.com/c/67e318d1-eb18-8011-8a60-4b90728c24db>
 
 ```{r}
 survey_vis <- survey_date |>
@@ -78,7 +80,11 @@ survey_vis <- survey_date |>
               )
 
 # create pie chart
+png("run_freq_pie.png", width = 800, height = 600) # open a new png device
 pie(survey_vis$fraction, labels = survey_vis$run_freq, main = "How often do you run per week?")
+
+dev.off() # close the device
+
 ```
 
 create barplot with ggplot
@@ -90,24 +96,5 @@ ggplot(data = survey_factor,
                     )
        ) +
 geom_bar() +
-labs(title = "Where do you run and how track your runs")
+labs(title = "Where do you run and how do you track your runs?")
 ```
-
-see if i am stupid
-
-```{r}
-library(gapminder)
-
-gapminder_2007 <- gapminder |>
-    filter(year == 2007)
-
-ggplot(data = gapminder_2007,
-      mapping = aes(x = continent,
-                   y = lifeExp,
-                   fill = continent
-                   )
-      ) +
-    geom_boxplot()
-```
-
-okay this worked
