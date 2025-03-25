@@ -1,0 +1,113 @@
+---
+title: "BreezeLabs Questionnaire summary"
+format: html
+author: "Jan Helfenstein"
+date: 2025-03-25
+---
+
+## Intro
+
+BreezeLabs conducted a survey with runners to determine the need for their product:\
+Personallized data from audio, which is recorded by bluetooth headphones during running.
+
+The goal is to see the interest in breathing data for runners, and to discover their current habits to track their runs.
+
+The results of this survey will the business roadmap in the future.
+
+```{r}
+# get libraries
+library(tidyverse)
+library(readr)
+library(ggplot2)
+library(readxl)
+library(lubridate)
+```
+
+## Get data from Excel
+
+In this section I load data from tidied excel sheet in rectangular format:
+
+```{r}
+survey <- read_excel("data/raw/breezelabs-questionnaire-raw.xlsx")
+
+
+```
+
+convert excel timestamp into date
+
+```{r}
+# mutate time column to change date into iso format
+# also convert run_freq to number
+# also rename running_loc to run_loc to have consistant names
+survey_date <- survey |>
+    rename(run_loc = running_loc) |>
+    mutate(date = as_date(time_num, origin = "1899-12-30")) |>
+#   mutate(date_time = as_datetime(time_num)) |>
+    mutate(run_freq = as.numeric(run_freq)) |>
+    relocate(date) |>
+#   relocate(date_time)
+    select(!time_num)
+```
+
+TODO change value "no" in variable "tracking" to "no tracking"
+
+```{r}
+
+```
+
+create factor variables
+
+```{r}
+levels_loc = c("nature", "city", "indoors", "other") # I want the levels in this order
+levels_tracking = c("no t racking", "free", "paid")
+
+#?as.factor
+
+survey_factor <- survey_date |>
+    mutate(run_loc = factor(run_loc, levels = levels_loc)) |>
+    mutate(tracking = as.factor(tracking))
+```
+
+## Create plots
+
+```{r}
+survey_vis <- survey_date |>
+    group_by(run_freq) |>
+    summarize(n = n(),
+              fraction = n()/nrow(survey_date)
+              )
+
+# create pie chart
+pie(survey_vis$fraction, labels = survey_vis$run_freq, main = "How often do you run per week?")
+```
+
+create barplot with ggplot
+
+```{r}
+ggplot(data = survey_factor,
+      mapping = aes(x = run_loc,
+                   fill = tracking
+                    )
+       ) +
+geom_bar() +
+labs(title = "Where do you run and how track your runs")
+```
+
+see if i am stupid
+
+```{r}
+library(gapminder)
+
+gapminder_2007 <- gapminder |>
+    filter(year == 2007)
+
+ggplot(data = gapminder_2007,
+      mapping = aes(x = continent,
+                   y = lifeExp,
+                   fill = continent
+                   )
+      ) +
+    geom_boxplot()
+```
+
+okay this worked
