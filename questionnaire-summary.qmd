@@ -3,6 +3,7 @@ title: "BreezeLabs Questionnaire summary"
 format: html
 author: "Jan Helfenstein"
 date: 2025-03-25
+editor: visual
 ---
 
 ## Intro
