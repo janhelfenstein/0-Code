@@ -6,13 +6,13 @@ import pandas as pd
 import time
 
 base_url = ("https://trackmaxx.ch/entrylist/"
-            "?race=scm25"
-            "&c=94cbe226-18ba-4fb8-b996-8ca4dad389ec"
+            "?race=brl26"
+            "&c=32e13bee-2c3d-40f6-ac1c-5ce4d6898493"
             "&p={page}")
 
 all_rows = []
-
-for page in range(1, 30):  # pages 1 through 29
+maxpages = 29
+for page in range(1, maxpages + 1):  # pages 1 through 29
     print(f"Fetching page {page} …")
     url = base_url.format(page=page)
     resp = requests.get(url)
@@ -20,7 +20,7 @@ for page in range(1, 30):  # pages 1 through 29
     soup = BeautifulSoup(resp.text, "html.parser")
 
     # find the table. Here it looks like each row is within the table after the heading "## Marathon Männer"
-    table = soup.find("h2", string="Marathon Männer")
+    table = soup.find("h2", string="10km Running Männer")
     if not table:
         print("Unexpected page structure on page", page)
         continue
@@ -45,9 +45,9 @@ df = pd.DataFrame(all_rows)
 print("Total rows scraped:", len(df))
 
 # Save to Excel
-df.to_excel("trackmaxx_entries.xlsx", index=False)
-print("Saved to trackmaxx_entries.xlsx")
+df.to_excel("bremgarten10k_entries.xlsx", index=False)
+print("Saved to bremgarten10k_entries.xlsx")
 
 # Save to CSV
-df.to_csv("trackmaxx_entries.csv", index=False)
-print("Saved to trackmaxx_entries.csv")
+df.to_csv("bremgarten10k_entries.csv", index=False)
+print("Saved to bremgarten10k_entries.csv")
